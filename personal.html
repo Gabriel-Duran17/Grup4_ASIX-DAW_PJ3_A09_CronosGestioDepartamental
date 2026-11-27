@@ -9,6 +9,8 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="personal.html">Personal</a></li>
             <li><a href="seguretat.html">Seguretat</a></li>
+            <li><a href="inventari.html">Inventari</a></li>
+            <li><a href="escenari.html">Escenari</a></li>
         </ul>
 </head>
 <body>
@@ -34,12 +36,153 @@
             <tbody>
                 <tr>
                     <td>Alberto</td>
+                    <td>de Santos</td>
+                    <td colspan="7">No Disponible</td>
+                </tr>
+
+                <tr>
                     <td>Thiago</td>
+                    <td>Acosta</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Tarde</td>
+                    <td>Tarde</td>
+                </tr>
+
+                <tr>
                     <td>Sergio</td>
+                    <td>Barrado</td>
+                    <td colspan="7">No Disponible</td>
+                </tr>
+
+                <tr>
                     <td>Agnes</td>
+                    <td>Plans</td>
+                    <td>Mañana</td>
+                    <td>Tarde</td>
+                    <td colspan="3">Baja Médica</td>
+                    <td>Tarde</td>
+                    <td>Tarde</td>
+                </tr>
+
+                <tr>
                     <td>Gabriel</td>
-                    <td>Thiago</td>
+                    <td>Duran</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Tarde</td>
+                    <td>Tarde</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Tarde</td>
+                </tr>
+
+                <tr>
+                    <td>Eric</td>
+                    <td>Salinas</td>
+                    <td colspan="3">Baja Médica</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Tarde</td>
+                </tr>
+
+                <tr>
+                    <td>Lionel</td>
+                    <td>Messi</td>
+                    <td>Tarde</td>
+                    <td>Tarde</td>
+                    <td>Tarde</td>
+                    <td>Tarde</td>
+                    <td>Tarde</td>
+                    <td>Tarde</td>
+                    <td>Tarde</td>
+                </tr>
+
+                <tr>
+                    <td>Cristiano</td>
+                    <td>Ronaldo</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                </tr>
+
+                <tr>
+                    <td>Felipe</td>
+                    <td>Luis</td>
+                    <td>Mañana</td>
+                    <td>Tarde</td>
+                    <td>Mañana</td>
+                    <td>Tarde</td>
+                    <td>Mañana</td>
+                    <td>Tarde</td>
+                    <td>Mañana</td>
+                </tr>
+
+                <tr>
+                    <td>Constantino</td>
+                    <td>Colon</td>
+                    <td>Mañana</td>
+                    <td>Mañana</td>
+                    <td>Tarde</td>
+                    <td>Tarde</td>
+                    <td colspan="3">Baja Médica</td>
                 </tr>
             </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Alta de nuevo trabajador</h2>
+        <form action="" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+            <br>
+            
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="text" id="telefono" name="telefono" required>
+            <br>
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="text" id="fecha" name="fecha" required>
+            <br>
+
+            <label for="departamento">Departamento asignado:</label>
+
+            <select name="departamento" id="departamento" required>
+
+                <option value="">Selecciona un departamento</option>
+                <option value="tecnico">Grupo Técnico</option>
+                <option value="logistica">Grupo Logística</option>
+                <option value="administracion">Dept. Administración</option>
+                
+            </select>
+            <br>
+
+            <label for="curriculum">Subir Currículum (PDF):</label>
+            <input type="file" name="curriculum" id="curriculum" accept=".pdf">
+            <br>
+
+            <button type="submit">Darse de alta</button>
+            <button type="reset">Borrar formulario</button>
+        </form>
+    </section>
+    <footer>
+        <p>Departamento de Recursos Humanos</p>
+    </footer>
 </body>
 </html>
