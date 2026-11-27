@@ -8,13 +8,14 @@
 <body>
     <header>
         <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="personal.html">Personal</a></li>
-            <li><a href="seguretat.html">Seguretat</a></li>
-            <li><a href="inventari.html">Inventario</a></li>
-        </ul>
-    </nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="seguretat.html">Seguretat</a></li>
+                <li><a href="inventari.html">Inventario</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section>
             <h1>Estoc de bebidas y comida</h1>
@@ -30,61 +31,61 @@
                 <tbody>
                     <tr>
                         <td>Coca-Cola</td>
-                        <td><img src="img/" alt="?"></td>
+                        <td><img src="img/coca.png" alt="coca-cola"></td>
                         <td>400</td>
                         <td>1,50 €</td>
                     </tr>
                     <tr>
                         <td>Agua mineral</td>
-                        <td><img src="img/" alt="?"></td>
+                        <td><img src="img/agua.png" alt="agua"></td>
                         <td>300</td>
                         <td>0,75 €</td>
                     </tr>
                     <tr>
                         <td>Fanta Naranja</td>
-                        <td><img src="img/" alt="?"></td>
+                        <td><img src="img/naranja.png" alt="naranja"></td>
                         <td>200</td>
                         <td>1,50€</td>
                     </tr>     
                     <tr>
                         <td>Fanta Limón</td>
-                        <td><img src="img/" alt="?"></td>
+                        <td><img src="img/limon.png" alt="limón"></td>
                         <td>200</td>
                         <td>1,50€</td>
                     </tr>     
                     <tr>
                         <td>Patatas Fritas</td>
-                        <td><img src="img/" alt="?"></td>
+                        <td><img src="img/patatas.jpg" alt="patatas"></td>
                         <td>150</td>
                         <td>1€</td>
                     </tr>     
                     <tr>
                         <td>Hamburguesas</td>
-                        <td><img src="img/" alt="?"></td>
+                        <td><img src="img/hamburguesa.png" alt="hamburguesas"></td>
                         <td>500</td>
                         <td>8,50€</td>
                     </tr>     
                     <tr>
                         <td>Frankfurt</td>
-                        <td><img src="img/" alt="?"></td>
+                        <td><img src="img/frankfurt.png" alt="frankfurt"></td>
                         <td>500</td>
                         <td>6,50€</td>
                     </tr>   
                     <tr>
                         <td>Helados Fantasmikos</td>
-                        <td><img src="img/" alt="?"></td>
+                        <td><img src="img/helado.png" alt="helados"></td>
                         <td>500</td>
                         <td>2,50€</td>
                     </tr>
                     <tr>
                         <td>Zumos multifruta</td>
-                        <td><img src="img/" alt="?"></td>
+                        <td><img src="img/zumo.png" alt="zumo"></td>
                         <td>200</td>
                         <td>0,75€</td>
                     </tr>
                     <tr>
                         <td>Cerveza Estrella Galicia</td>
-                        <td><img src="img/" alt="?"></td>
+                        <td><img src="img/cerveza.png" alt="cerveza"></td>
                         <td>400</td>
                         <td>3,50€</td>
                     </tr>                 
@@ -92,12 +93,66 @@
         </section>
         <section>
             <h1>Comanda a proveedor</h1>
-            <p> </p>
+            <form action="#" method="post">
+                <label for="producte">Selecciona el producto:</label>
+                <select id="producte" name="producte" required>
+                    <option value="">-- Selecciona un producto --</option>
+                    <option value="Coca-Cola">Coca-Cola</option>
+                    <option value="Agua mineral">Agua mineral</option>
+                    <option value="Fanta Naranja">Fanta Naranja</option>
+                    <option value="Fanta Limón">Fanta Limón</option>
+                    <option value="Patatas Fritas">Patatas Fritas</option>
+                    <option value="Hamburguesas">Hamburguesas</option>
+                    <option value="Frankfurt">Frankfurt</option>
+                    <option value="Helados Fantasmikos">Helados Fantasmikos</option>
+                    <option value="Zumos multifruta">Zumos multifruta</option>
+                    <option value="Cerveza Estrella Galicia">Cerveza Estrella Galicia</option>
+                </select>
+                <br>
+                <label for="enlace">Enlace al catálogo:</label>
+                <input
+                    type="url"
+                    id="enlace"
+                    name="enlace"
+                    placeholder="https://www.coca-cola.com/es/es"
+                    required
+                >
+                <br>
+                <label for="cantidad">Cantidad necesaria:</label>
+                <input
+                    type="number"
+                    id="cantidad"
+                    name="cantidad"
+                    min="10"
+                    max="500"
+                    required
+                >
+                <br>
+                <label for="fecha">Fecha límite de entrega:</label>
+                <input
+                    type="date"
+                    id="fecha"
+                    name="fecha"
+                    required
+                >
+                <br>
+                <input
+                    type="checkbox"
+                    id="condiciones"
+                    name="condiciones"
+                    required
+                >
+                <label for="condiciones">
+                Acepto las condiciones de compra
+                </label>
+                <br>
+                <button type="submit">Enviar pedido</button>
+            </form>
         </section>
     </main>
     <footer>
 
     </footer>
-   </header>
+
 </body>
 </html>
